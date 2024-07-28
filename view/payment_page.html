@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title> FastPower</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!---------- Place favicon.ico here ---------->
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo/index.ico">
+  <!---------- CDN CSS Here ---------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <!-- Custom Style CSS Here -->
+  <link rel="stylesheet" href="../css/sfc_master.css">
+  <link rel="stylesheet" href="../css/navbar__footer.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body-class">
+  <div class="header__wrapper shop_inner_page">
+    <!-------------Navbar Section------------->
+    <div class="navbar__wrapper">
+      <div class="container-fluid">
+        <nav class="navbar">
+          <div class="navbar__brand">
+            <a href="index.html"> <img src="../images/logo/brand_logo.svg" alt="Logo"></a>
+          </div>
+          <div class="navbar__menu">
+            <ul class="navbar-nav" id="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about_us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact_us.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex navbar__right align-items-center">
+            <div class="cell_no d-flex align-items-center">
+              <img src="../images/icon/nav_cell.svg" alt="">
+              <p>09678-183183</p>
+            </div>
+            <a href="cart_page.html">
+              <div class="cart_btn d-flex justify-content-center align-items-center">
+                <img src="../images/icon/cart_icon.svg" alt="">
+                <span class="badge">20</span>
+              </div>
+            </a>
+
+            <a href="login.html"><button class="solid__btn btn-md">Login</button></a>
+            <div class=" d-flex justify-content-center align-items-center">
+              <button class="lng__change"> EN</button>
+            </div>
+
+            <div class="mobile-nav-toggler">
+              <img src="../images/icon/fa_bar.svg" alt="">
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-------------Navbar Section------------->
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+      <div class="menu-backdrop"></div>
+      <nav class="menu-box">
+        <div class="menubtn d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <a href="index.html"> <img src="../images/logo/brand_logo.svg" class="img-fluid" /></a>
+          </div>
+          <div class="close-btn ">
+            <img src="../images/close.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <hr class="footer_hr">
+        <div class="menu-outer">
+          <div class="nav_link d-flex flex-column ">
+
+          </div>
+          <a href="#" class="lang_cng_btn mobile"><button class="anchor_btn">EN</button><button
+              class="anchor_btn bangla">বাং</button></a>
+          <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu  -->
+
+  </div>
+
+
+  <!---------------Single Page Checkout-------------->
+  <div class="checkout__wrapper">
+    <div class="container-fluid">
+      <div class="row product__checkout justify-content-between">
+        <div class="col-sm-6 col-md-8">
+          <div class="user__shiping_addr">
+            <div class="title d-flex align-items-center justify-content-between">
+              <h6 class="h7">Shipping Address</h6>
+              <span class="d-flex align-items-center gap-4">
+                <a href="#" class="cng_addrs d-flex gap-1" data-bs-toggle="modal"
+                  data-bs-target="#change__address">Change <span class="hide__txt">Address</span></a>
+                <a href="#" class="d-flex gap-1" data-bs-toggle="modal" data-bs-target="#new__address">Add New <span
+                    class="hide__txt">Address</span></a>
+              </span>
+            </div>
+            <div class="user__information d-flex flex-column">
+              <p class="user__name">Md Abdul Mannan</p>
+              <p class="user__cell d-flex align-items-center">01315565037</p>
+              <p class="user__saving_addr d-flex align-items-center">23/3, Shekertake, Road Number 8, Mohammadpur, Dhaka
+                1207.</p>
+
+            </div>
+          </div>
+          <div class="payment__method">
+            <h6 class="h7">Select Payment Method</h6>
+            <div class="radio_checkbox d-flex justify-content-between w-100">
+              <div class="form-check">
+                <label class="form-check-label " for="cr_dbt"><img src="../images/icon/small_card.svg" alt=""
+                    class="me-2">
+                  Credit/Debit Card</label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="cr_dbt">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label " for="bkash"><img src="../images/icon/small_bkash.svg" alt=""
+                    class="me-2">Bkash</label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="bkash">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label " for="nagad">
+                  <img src="../images/icon/small_nagad.svg" alt="" class="me-2">Nagad</label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="nagad">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" for="rocket"><img src="../images/icon/small_rocket.svg" alt=""
+                    class="me-2">Rocket</label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="rocket">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label " for="cod"><img src="../images/icon/small_walet.svg" alt=""
+                    class="me-2">Cash on
+                  Delivery</label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="cod">
+              </div>
+            </div>
+            <!--------------- bank form ---------------->
+            <div class="payment__form" id="bank-form">
+              <div class="title d-flex justify-content-between">
+                <h6 class="h7">Credits/Debit Cards</h6>
+                <a href="#" class="anchor_btn" data-bs-toggle="collapse" data-bs-target="#account-details"
+                  aria-expanded="false" aria-controls="account-details">Add New</a>
+              </div>
+
+              <div class="collapse" id="account-details">
+                <form action="">
+                  <div class="row gap-5">
+                    <div class="col-sm-12">
+                      <label for="card_no" class="txt_label">Card Number</label>
+                      <input type="number" class="form-control" id="card_no" placeholder="Card Number">
+                    </div>
+                    <div class="col-sm-12">
+                      <label for="card_name" class="txt_label">Name of Card Holder</label>
+                      <input type="text" class="form-control" id="card_name" placeholder="Name of Card Holder">
+                    </div>
+                    <div class="col-sm-12 d-flex justify-content-between">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col-sm-8">
+                          <div class="expire_date">
+                            <label for="card_expire" class="txt_label">Expiration date</label>
+                            <input type="text" class="form-control" id="card_expire" placeholder="MM/YY">
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="cc-cvv">
+                            <label for="cvv" class="txt_label">CVV No</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input filled-in" type="checkbox" value="" id="Checkbox1">
+                        <label class="form-check-label h-6" for="Checkbox1">
+                          Save Card
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="acc_lists d-flex flex-column">
+                <div class="acc__name_num is-select d-flex align-items-center">
+                  <img src="../images/icon/medium_card.svg" alt="">
+                  <p>01717...…......85</p>
+                </div>
+                <div class="acc__name_num d-flex align-items-center">
+                  <img src="../images/icon/medium_card.svg" alt="">
+                  <p>01717...…......85</p>
+                </div>
+              </div>
+              <div class="pay-now">
+                <button class="solid__btn btn__lg">Pay Now</button>
+              </div>
+            </div>
+            <!--------------- bank form ---------------->
+            <!--------------- bKash form ---------------->
+            <div class="payment__form" id="bkash-form">
+              <div class="title d-flex justify-content-between">
+                <h6 class="h7">Bkash</h6>
+                <a href="#" class="anchor_btn" data-bs-toggle="collapse" data-bs-target="#account-details"
+                  aria-expanded="false" aria-controls="account-details">Add New</a>
+              </div>
+
+              <div class="collapse" id="account-details">
+                <form action="">
+                  <div class="row gap-5">
+                    <div class="col-sm-12">
+                      <label for="bkash_no" class="txt_label">Bkash Number</label>
+                      <input type="number" class="form-control" id="bkash_no" placeholder="Bkash Number">
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input filled-in" type="checkbox" value="" id="check_bkash"
+                          value="option1">
+                        <label class="form-check-label" for="check_bkash">
+                          Save Number
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="acc_lists d-flex flex-column">
+                <div class="acc__name_num is-select d-flex align-items-center">
+                  <img src="../images/icon/medium_bkash.svg" alt="">
+                  <p>01717...…......85</p>
+                </div>
+                <div class="acc__name_num d-flex align-items-center">
+                  <img src="../images/icon/medium_bkash.svg" alt="">
+                  <p>01717...…......85</p>
+                </div>
+              </div>
+              <div class="pay-now">
+                <button class="solid__btn btn__lg">Pay Now</button>
+              </div>
+            </div>
+            <!--------------- bKash form ---------------->
+
+            <!--------------- Nagad form ---------------->
+            <div class="payment__form" id="nagad-form">
+              <div class="title d-flex justify-content-between">
+                <h6 class="h7">Nagad</h6>
+                <a href="#" class="anchor_btn" data-bs-toggle="collapse" data-bs-target="#account-details"
+                  aria-expanded="false" aria-controls="account-details">Add New</a>
+              </div>
+
+              <div class="collapse" id="account-details">
+                <form action="">
+                  <div class="row gap-5">
+                    <div class="col-sm-12">
+                      <label for="nagad_no" class="txt_label">Nagad Number</label>
+                      <input type="number" class="form-control" id="nagad_no" placeholder="Nagad Number">
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input filled-in" type="checkbox" value="" id="check_nagad"
+                          value="option1">
+                        <label class="form-check-label" for="check_nagad">
+                          Save Number
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="acc_lists d-flex flex-column">
+                <div class="acc__name_num is-select d-flex align-items-center">
+                  <img src="../images/icon/medium_nagad.svg" alt="">
+                  <p>01717...…......85</p>
+                </div>
+                <div class="acc__name_num d-flex align-items-center">
+                  <img src="../images/icon/medium_nagad.svg" alt="">
+                  <p>01717...…......85</p>
+                </div>
+              </div>
+              <div class="pay-now">
+                <button class="solid__btn btn__lg">Pay Now</button>
+              </div>
+            </div>
+            <!--------------- Nagad form ---------------->
+            <!--------------- Rocket form ---------------->
+            <div class="payment__form" id="rocket-form">
+              <div class="title d-flex justify-content-between">
+                <h6 class="h7">Nagad</h6>
+                <a href="#" class="anchor_btn" data-bs-toggle="collapse" data-bs-target="#account-details"
+                  aria-expanded="false" aria-controls="account-details">Add New</a>
+              </div>
+
+              <div class="collapse" id="account-details">
+                <form action="">
+                  <div class="row gap-5">
+                    <div class="col-sm-12">
+                      <label for="rocket_no" class="txt_label">Rocket Number</label>
+                      <input type="number" class="form-control" id="rocket_no" placeholder="Rocket Number">
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input filled-in" type="checkbox" value="" id="check_rocket"
+                          value="option1">
+                        <label class="form-check-label" for="check_rocket">
+                          Save Number
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="acc_lists d-flex flex-column">
+                <div class="acc__name_num is-select d-flex align-items-center">
+                  <img src="../images/icon/medium_rocket.svg" alt="">
+                  <p>01717...…......85</p>
+                </div>
+                <div class="acc__name_num d-flex align-items-center">
+                  <img src="../images/icon/medium_rocket.svg" alt="">
+                  <p>01717...…......85</p>
+                </div>
+              </div>
+              <div class="pay-now">
+                <button class="solid__btn btn__lg">Pay Now</button>
+              </div>
+            </div>
+            <!--------------- Rocket form ---------------->
+
+            <!--------------- COD form ---------------->
+            <div class="payment__form" id="cod-form">
+              <div class="pay-now">
+                <button class="solid__btn btn__lg">Pay Now</button>
+              </div>
+            </div>
+            <!--------------- COD form ---------------->
+
+
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="order__summary">
+            <h6 class="h7 text-center">Order Summery</h6>
+            <hr class="footer_hr">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <p>Sub Total (2 Items)</p>
+                <p class="product_price">৳ 13,500</p>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <p>Discount</p>
+                <p class="dis__amount">৳ 1500</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <p>Shipping Fee</p>
+                <p class="charge">৳ 500</p>
+              </li>
+              <hr class="footer_hr">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <p class="s__product_name">Total</p>
+                <p class="s__product_price">৳ 20500</p>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------Single Page Checkout-------------->
+
+  <!-- Modal for New Address-->
+  <div class="modal" id="new__address" tabindex="-1" aria-labelledby="exampleModalLgLabel" style="display: none;"
+    aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6>Add New Address</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="../images/icon/small_cross.svg" alt=""></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row gap-4">
+
+              <div class="col-sm-12">
+                <label for="user_name" class="txt_label">Name</label>
+                <input type="text" class="form-control" id="user_name" placeholder="Name">
+              </div>
+              <div class="col-sm-12">
+                <label for="phn_num" class="txt_label">Phone Number</label>
+                <input type="number" class="form-control" id="phn_num" placeholder="Phone Number">
+              </div>
+              <div class="col-sm-12">
+                <label for="address" class="txt_label">Address</label>
+                <textarea name="" class="form-control" id="" cols="3" rows="1" placeholder="Address"></textarea>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="submit_btn">
+                  <button class="solid__btn btn-md">Save</button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for New Address-->
+
+  <!-- Modal for Save Address-->
+  <div class="modal" id="change__address" tabindex="-1" aria-labelledby="exampleModalLgLabel" style="display: none;"
+    aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6>Select Address</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="../images/icon/small_cross.svg" alt=""></button>
+        </div>
+        <div class="modal-body">
+          <div class="address__lists d-flex gap-3">
+            <div class="card ">
+              <div class="card-body">
+                <div class="user_saving_info d-flex flex-column">
+                  <div class="ctn_name">
+                    <p> Mizanur Rahman</p>
+                  </div>
+                  <div class="address d-flex align-items-start">
+                    <img src="../images/icon/small_location.svg" alt="" class="map">
+                    <p>House:17/2, Road: 3/A, Dhanmondi, Dhaka-1209</p>
+                  </div>
+                  <div class="ctn_number d-flex align-items-center">
+                    <img src="../images/icon/small_phone.svg" alt="" class="ctn_number">
+                    <p>8801315565037</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card ">
+              <div class="card-body">
+                <div class="user_saving_info d-flex flex-column">
+                  <div class="ctn_name">
+                    <p> Mizanur Rahman</p>
+                  </div>
+                  <div class="address d-flex align-items-start">
+                    <img src="../images/icon/small_location.svg" alt="" class="map">
+                    <p>House:17/2, Road: 3/A, Dhanmondi, Dhaka-1209</p>
+                  </div>
+                  <div class="ctn_number d-flex align-items-center">
+                    <img src="../images/icon/small_phone.svg" alt="" class="ctn_number">
+                    <p>8801315565037</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Save Address-->
+  <!--------------- Footer --------------->
+  <div class="footer__wraper">
+    <div class="container-fluid">
+      <div class="footer">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="company__brand d-flex justify-content-between">
+              <div class="brand__logo">
+                <div class="logo">
+                  <img src="../images/logo/brand_logo.svg" alt="">
+                </div>
+                <p> House# 44, Rd No. 2/A, Dhanmondi, <br> Zigatola Dhaka 1209</p>
+                <p>E-mail: info@fastpowertech.com</p>
+                <p>Hotline: 09678-183183</p>
+              </div>
+              <div class="impt__link">
+                <h6>Company</h6>
+                <ul class="links_list d-flex">
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy policy</a>
+
+                  </li>
+                  <li>
+                    <a href="#">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="support__social_media d-flex justify-content-between">
+              <div class="suprt_link">
+                <h6>Support</h6>
+                <ul class="links_list d-flex">
+
+                  <li>
+                    <a href="#">Contact Us</a>
+
+                  </li>
+                  <li>
+                    <a href="#">FAQ’s</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="social_link">
+                <h6>Find Us</h6>
+                <div class="icons d-flex">
+                  <a href="https://www.facebook.com/fastpowertech">
+                    <div class="circles facebook">
+                      <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.80197 6.11678H5.21697V4.42278C5.20283 4.32191 5.21117 4.21916 5.24138 4.12188C5.2716 4.02461 5.32295 3.93522 5.39175 3.86011C5.46055 3.785 5.54511 3.72603 5.63937 3.68742C5.73362 3.64881 5.83525 3.63152 5.93697 3.63678H7.76398V0.836781L5.24397 0.822782C4.78493 0.786712 4.32351 0.850543 3.8915 1.00988C3.45948 1.16922 3.06713 1.42028 2.74144 1.74578C2.41574 2.07128 2.16445 2.46349 2.00486 2.89542C1.84527 3.32734 1.78117 3.78871 1.81697 4.24778V6.11678H0.198975V9.00578H1.81697V17.1808H5.21697V9.00578H7.50997L7.80197 6.11678Z"
+                          fill="#9D9D9D" />
+                      </svg>
+
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="circles linkendin">
+                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4.02515 14H1.02515V4H4.02515V14ZM15.0251 14H12.0251V8.658C12.0251 7.266 11.5251 6.573 10.5461 6.573C10.1956 6.55493 9.85001 6.66222 9.57132 6.87568C9.29263 7.08914 9.09902 7.39482 9.02515 7.738V14H6.02515C6.02515 14 6.06515 5 6.02515 4H8.39315L8.57615 6H8.63815C8.93467 5.48276 9.36427 5.05435 9.88233 4.75927C10.4004 4.46419 10.988 4.31321 11.5841 4.322C12.0471 4.2924 12.5107 4.36686 12.9411 4.5399C13.3714 4.71295 13.7576 4.98019 14.0711 5.322C14.762 6.17478 15.1031 7.25824 15.0251 8.353V14Z"
+                          fill="#9D9D9D" />
+                        <path
+                          d="M2.5251 3C3.38114 3 4.0751 2.32843 4.0751 1.5C4.0751 0.671573 3.38114 0 2.5251 0C1.66906 0 0.975098 0.671573 0.975098 1.5C0.975098 2.32843 1.66906 3 2.5251 3Z"
+                          fill="#9D9D9D" />
+                      </svg>
+
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="circles ">
+                      <img src="../images/icon/instagram.svg" alt="" class="instra">
+                      <img src="../images/icon/instagram_hovr.svg" alt="" class="instra_hover">
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="circles twitter">
+                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.3781 1.80407C16.7509 2.08239 16.0855 2.26476 15.4041 2.34507C16.122 1.91631 16.6595 1.24097 16.9161 0.44507C16.2413 0.845853 15.503 1.12826 14.7331 1.28007C14.2146 0.729766 13.5293 0.36555 12.7831 0.243708C12.0369 0.121867 11.2713 0.249185 10.6047 0.605985C9.93815 0.962786 9.40763 1.5292 9.09517 2.2177C8.78271 2.90619 8.70571 3.67843 8.87607 4.41507C7.50913 4.34659 6.17187 3.99141 4.9511 3.37258C3.73034 2.75376 2.65335 1.88512 1.79007 0.823069C1.35059 1.57913 1.21537 2.47412 1.41187 3.32627C1.60838 4.17842 2.12188 4.92382 2.84807 5.41107C2.30223 5.39381 1.76841 5.24638 1.29107 4.98107C1.29107 4.99507 1.29107 5.01007 1.29107 5.02507C1.29142 5.81859 1.56609 6.58759 2.06855 7.20176C2.57101 7.81594 3.27035 8.23752 4.04807 8.39507C3.75271 8.475 3.44805 8.51535 3.14207 8.51507C2.92492 8.51508 2.70827 8.49431 2.49507 8.45307C2.71468 9.13601 3.14225 9.73324 3.71798 10.1612C4.29371 10.5892 4.98881 10.8266 5.70607 10.8401C4.26564 11.967 2.43846 12.4795 0.62207 12.2661C2.09966 13.2127 3.80478 13.7441 5.55852 13.8047C7.31227 13.8653 9.04999 13.4528 10.5894 12.6104C12.1288 11.768 13.4131 10.5269 14.3076 9.01718C15.202 7.50748 15.6737 5.78486 15.6731 4.03007C15.6731 3.8814 15.6697 3.73307 15.6631 3.58507C16.3364 3.09847 16.9172 2.49529 17.3781 1.80407Z"
+                          fill="#9D9D9D" />
+                      </svg>
+
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="copy_right d-flex align-items-center justify-content-center">
+          <img src="../images/copy_right.svg" alt="">
+          <p>2020 - 2023 Fastpower. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------- Footer --------------->
+
+
+  <!---------- Script CDN Link Here ---------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="../js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      var quantitiy = 0;
+      $('.quantity-right-plus').click(function (e) {
+        e.preventDefault();
+        var quantity = parseInt($('#quantity').val());
+        $('#quantity').val(quantity + 1);
+
+      });
+
+      $('.quantity-left-minus').click(function (e) {
+        e.preventDefault();
+        var quantity = parseInt($('#quantity').val());
+        if (quantity > 0) {
+          $('#quantity').val(quantity - 1);
+        }
+      });
+
+    });
+  </script>
+
+  <script>
+    let thumbnails = document.getElementsByClassName("thumbnail");
+
+    let activeImages = document.getElementsByClassName("active");
+
+    for (var i = 0; i < thumbnails.length; i++) {
+      thumbnails[i].addEventListener("mouseover", function () {
+        console.log(activeImages);
+
+        if (activeImages.length > 0) {
+          activeImages[0].classList.remove("active");
+        }
+
+        this.classList.add("active");
+        document.getElementById("product-main-image").src = this.src;
+      });
+    }
+
+
+
+
+  </script>
+
+  <script>
+    // -----------------Check  Out page Form Open Js Code
+
+    $(document).ready(function () {
+      $("#cr_dbt").click(function () {
+        $("#bank-form").toggle(0);
+        $("#bkash-form").hide(0);
+        $("#nagad-form").hide(0);
+        $("#rocket-form").hide(0);
+        $("#cod-form").hide(0);
+      });
+
+      $("#bkash").click(function () {
+        $("#bank-form").hide(0);
+        $("#bkash-form").toggle(0);
+        $("#nagad-form").hide(0);
+        $("#rocket-form").hide(0);
+        $("#cod-form").hide(0);
+      });
+
+      $("#nagad").click(function () {
+        $("#bank-form").hide(0);
+        $("#bkash-form").hide(0);
+        $("#nagad-form").toggle(0);
+        $("#rocket-form").hide(0);
+        $("#cod-form").hide(0);
+      });
+
+      $("#rocket").click(function () {
+        $("#bank-form").hide(0);
+        $("#bkash-form").hide(0);
+        $("#nagad-form").hide(0);
+        $("#rocket-form").toggle(0);
+        $("#cod-form").hide(0);
+      });
+
+      $("#cod").click(function () {
+        $("#bank-form").hide(0);
+        $("#bkash-form").hide(0);
+        $("#nagad-form").hide(0);
+        $("#rocket-form").hide(0);
+        $("#cod-form").toggle(0);
+      });
+    });
+
+// ----------------End Check  Out page Form Open Js Code
+  </script>
+
+
+</body>
+
+</html>
